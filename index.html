@@ -1,0 +1,53 @@
+
+<html>
+    <head>
+        <title> YASH MUSIC </title>
+        <link rel="stylesheet" href="u.css">
+</head>
+    <body> 
+        <div class="container">
+            <div class="navbar">
+            <img src="PngItem_5192125.png" class="logo">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                     <li><a href="#">ABOUT</a></li>
+                     <li><a href="#">SPECIFICATION</a></li>
+                     <li><a href="#">PRODUCTS</a></li>
+                     <li><a href="#">CONNECT</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="left-col">
+                <h1> Y.R<br> REAL<br> SOUND</h1>
+                </div>
+                <div class="right-col">
+                <p>Click here to listen</p>
+                <img src="play.png" id="icon">
+                    </div>
+            </div>
+        
+        </div>
+        <audio id="mySong">
+            <source src="Paani%20Da%20-%208D%20Audio.mp3" type="audio/mp3">
+        </audio>
+        <script>
+            var mySong = document.getElementById("mySong");
+            var icon = document.getElementById("icon");
+            
+            icon.onclick=function(){
+                if(mySong.paused){
+                    mySong.play();
+                    icon.src="pause.png";
+                } else{
+                    mySong.pause();
+                    icon.src="play.png";
+
+                }
+
+            
+            }
+
+        
+        </script>
+    </body>
+</html>
